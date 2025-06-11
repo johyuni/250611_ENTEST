@@ -1,0 +1,8 @@
+.inner {
+    position: relative;
+    max-width: 144rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 12rem 4rem;
+    box-sizing: border-box;
+}

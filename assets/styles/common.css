@@ -1,0 +1,198 @@
+/* header */
+.header {
+	padding: 0 12rem;
+	height: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+
+.header .logo {
+	width: 14rem;
+	height: 100%;
+	flex-shrink: 0;
+}
+
+.header .logo a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.nav_list {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	gap: 0 4rem
+}
+
+.nav_item a {
+	display: block;
+	color: #020202;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+
+/* intro */
+.intro .swiper .swiper-slide {
+	position: relative;
+	width: 100%;
+	height: 75rem;
+	z-index: 0;
+}
+
+.intro .swiper .swiper-slide .txt {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	padding: 0 26rem;
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem 0;
+	transform: translate(0, -50%);
+}
+
+.intro .swiper .swiper-slide img {
+	object-fit: cover;
+	filter: brightness(50%);
+}
+
+.intro .swiper .swiper-slide .txt strong,
+.intro .swiper .swiper-slide .txt p {
+	color: #fff;
+}
+
+.intro .swiper .swiper-slide .txt strong {
+	display: block;
+	font-size: 6rem;
+	font-weight: 700;
+}
+
+.intro .swiper .swiper-slide .txt p {
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: #fff !important;
+	padding: 0 5rem;
+}
+
+
+/* card */
+.card_list {
+	display: flex;
+	gap: 3rem;
+	flex-grow: 1;
+}
+
+.card_item {
+	flex-grow: 1;
+	box-shadow: 5px 5px 5px 3px #eee;
+	border-bottom-left-radius: .6rem;
+	border-bottom-right-radius: .6rem
+}
+
+.card_item .txt {
+	border-bottom-left-radius: .6rem;
+	border-bottom-right-radius: .6rem
+}
+
+.card_item a img {
+	height: 19.2rem;
+	border-top-left-radius: .6rem;
+	border-top-right-radius: .6rem;
+}
+
+.card_item a .txt {
+	display: flex;
+	flex-direction: column;
+	padding: 2.6rem 3rem;
+	height: 18rem;
+	background-color: #fff;
+}
+
+.card_item a .txt h4,
+.card_item a .txt p {
+	color: #333;
+}
+
+.card_item a .txt h4 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.card_item a .txt p {
+	margin-top: 1.6rem;
+	font-size: 1.4rem;
+	line-height: 120%;
+}
+
+.card_item a .txt span {
+	margin-top: auto;
+	color: #888;
+	font-size: 1.4rem;
+}
+
+/* custom */
+.custom {
+	background: #eee url("/assets/images/img_custom.png") no-repeat;
+	background-size: 20rem;
+	background-position: center right 12rem;
+	height: 100%;
+}
+
+.custom .txt h3 {
+	font-size: 3.8rem;
+	font-weight: 700;
+}
+
+.custom .txt p {
+	margin-top: 1.6rem;
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+
+.custom .txt .button {
+	display: inline-block;
+	padding: 0 1.2rem;
+	height: 4rem;
+	line-height: 4rem;
+	margin-top: 3rem;
+	font-size: 1.6rem;
+	color: #fff;
+	background-color: #7B22F4;
+	transition: all 0.4s ease-in-out;
+	border-radius: .6rem;
+}
+
+.custom .txt .button:hover {
+	background-color: #954cfa;
+}
+
+/* footer*/
+.footer {
+	background-color: #222;
+	padding: 2rem 16rem;
+}
+
+.footer .logo {
+	width: 10rem;
+	height: 100%;
+	flex-shrink: 0;
+}
+
+.footer span {
+	display: block;
+	color: #888;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
