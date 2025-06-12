@@ -88,6 +88,7 @@ video {
 	padding: 0;
 	border: 0;
 	font-size: 10px;
+	line-height: 120%;
 	font: inherit;
 	font-family: Pretendard;
 	vertical-align: baseline;

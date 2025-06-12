@@ -1,3 +1,8 @@
+/* html*/
+html {
+	scroll-behavior: smooth;
+}
+
 /* header */
 .header {
 	position: sticky;
@@ -10,6 +15,7 @@
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	background-color: white;
+	box-shadow: 1px 1px 1px 1px #eee;
 }
 
 .header .logo {
@@ -74,13 +80,11 @@
 	display: block;
 	font-size: 6rem;
 	font-weight: 700;
-	line-height: 120%;
 }
 
 .intro .swiper .swiper-slide .txt p {
 	font-size: 2.2rem;
 	font-weight: 400;
-	line-height: 120%;
 }
 
 .swiper-button-next,
@@ -169,6 +173,7 @@
 	flex-direction: column;
 	align-items: flex-start;
 	word-break: keep-all;
+	gap: 1.6rem;
 }
 
 .custom .txt h3 {
@@ -177,24 +182,24 @@
 }
 
 .custom .txt p {
-	margin-top: 1.6rem;
 	font-size: 1.8rem;
-	line-height: 120%;
 	font-weight: 400;
+	line-height: 120%;
+	color: #555;
 }
 
 .custom .txt .button {
 	display: inline-block;
+	margin-top: 1.6rem;
 	padding: 0 1.2rem;
 	height: 4rem;
 	line-height: 4rem;
-	margin-top: 3rem;
 	font-size: 1.6rem;
 	color: #fff;
 	background-color: #7B22F4;
 	transition: all 0.4s ease-in-out;
 	border-radius: .6rem;
-	word-wrap: nowrap;
+	white-space: nowrap;
 }
 
 .custom .txt .button:hover {
@@ -203,7 +208,7 @@
 
 /* footer*/
 .footer {
-	background-color: #222;
+	background-color: #333;
 	padding: 2rem 16rem;
 }
 

@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>250611_ENTEST_조현희</title>
-    <!-- style -->
+    <!-- style & Swiper-->
     <link rel="stylesheet" href="./assets/styles/style.css" />
-
-    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
+
   <body>
     <div class="wrap">
       <!-- 헤더영역 -->
@@ -25,8 +24,8 @@
         <nav class="nav">
           <ul class="nav_list">
             <li class="nav_item"><a href="#">HOME</a></li>
-            <li class="nav_item"><a href="#">ABOUT</a></li>
-            <li class="nav_item"><a href="#">CONTACT</a></li>
+            <li class="nav_item"><a href="#about">ABOUT</a></li>
+            <li class="nav_item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </header>
@@ -72,7 +71,7 @@
           </div>
         </section>
 
-        <section class="card">
+        <section id="about" class="card">
           <div class="inner">
             <ul class="card_list">
               <li class="card_item">
@@ -131,7 +130,7 @@
           </div>
         </section>
 
-        <section class="custom">
+        <section id="contact" class="custom">
           <div class="inner">
             <div class="txt">
               <h3>프로젝트 문의</h3>
@@ -164,6 +163,10 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 0,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
