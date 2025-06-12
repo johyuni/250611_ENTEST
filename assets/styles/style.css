@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
 @import "reset.css";
-@import "layout.css";
 @import "common.css";
+@import "layout.css";
 @import "font.css";

@@ -52,8 +52,8 @@
 .intro .swiper .swiper-slide.main1,
 .intro .swiper .swiper-slide.main2,
 .intro .swiper .swiper-slide.main3 {
-	background: url('/assets/images/main.jpg') no-repeat center bottom -3rem;
-	background-size: 100%;
+	background: url('/assets/images/main.jpg') no-repeat center;
+	background-size: cover;
 }
 
 .intro .swiper .swiper-slide .txt {
@@ -62,7 +62,6 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2rem 0;
-	word-break: keep-all;
 }
 
 
@@ -113,6 +112,7 @@
 	height: 19.2rem;
 	border-top-left-radius: .6rem;
 	border-top-right-radius: .6rem;
+	object-fit: cover;
 }
 
 .card_item a .txt {
@@ -147,14 +147,28 @@
 
 /* custom */
 .custom {
-	background: #eee url("/assets/images/img_custom.png") no-repeat;
+	background: #eee;
+}
+
+.custom>.inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.custom .ico {
+	display: block;
+	width: 20rem;
+	height: 20rem;
+	background: url("/assets/images/ico_custom.png") no-repeat center;
 	background-size: 20rem;
-	background-position: center right 12rem;
-	height: 100%;
 }
 
 .custom .txt {
-	width: calc(100% - 36rem);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	word-break: keep-all;
 }
 
 .custom .txt h3 {
@@ -165,6 +179,7 @@
 .custom .txt p {
 	margin-top: 1.6rem;
 	font-size: 1.8rem;
+	line-height: 120%;
 	font-weight: 400;
 }
 
@@ -179,6 +194,7 @@
 	background-color: #7B22F4;
 	transition: all 0.4s ease-in-out;
 	border-radius: .6rem;
+	word-wrap: nowrap;
 }
 
 .custom .txt .button:hover {

@@ -1,8 +1,91 @@
 .inner {
-    position: relative;
-    max-width: 144rem;
-    height: 100%;
-    margin: 0 auto;
-    padding: 12rem 4rem;
-    box-sizing: border-box;
+	position: relative;
+	max-width: 144rem;
+	height: 100%;
+	margin: 0 auto;
+	padding: 12rem 4rem;
+	box-sizing: border-box;
+}
+
+
+/* ta*/
+@media screen and (max-width: 1280px) {
+	.header {
+		padding: 0 2rem;
+	}
+
+	.header .logo {
+		width: 10rem;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		padding: 0 2rem;
+	}
+
+	.intro .swiper .swiper-slide .txt {
+		width: calc(100% - 30rem);
+	}
+
+	.intro .swiper .swiper-slide .txt strong {
+		font-size: 5.4rem;
+	}
+
+	.intro .swiper .swiper-slide .txt p {
+		font-size: 1.8rem;
+	}
+
+	.card .card_list {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.footer {
+		padding: 2rem 4rem;
+	}
+}
+
+/* mo */
+@media screen and (max-width: 730px) {
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		padding: 0 .6rem;
+	}
+
+	.intro .swiper .swiper-slide .txt {
+		width: calc(100% - 18rem);
+	}
+
+	.intro .swiper .swiper-slide .txt br {
+		display: none;
+	}
+
+	.card .card_list {
+		grid-template-columns: 1fr;
+	}
+
+	.custom>.inner {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		gap: 6rem 0;
+	}
+
+	.custom .txt {
+		align-items: center;
+		text-align: center;
+	}
+
+	.custom .txt h3 {
+		font-size: 2.8rem;
+	}
+
+	.custom .txt p {
+		font-size: 1.6rem;
+	}
+
+	.custom .ico {
+		display: none;
+	}
 }
